@@ -1,7 +1,11 @@
 # 🩺 **MEDIBOT — Multi-Agent AI Medical Assistant**
 
-**MEDIBOT** is an advanced **multi-agent AI chatbot** built for the **medical domain**, combining **Retrieval-Augmented Generation (RAG)**, **Google Gemini LLM**, and multiple **domain-specific APIs**.  
-It delivers clinically relevant, context-aware responses across drug data, diagnosis, wellness, and research insights.
+**MEDIBOT** is a next-generation **multi-agent AI system** built for the **medical domain**, designed to act as an intelligent, domain-aware virtual health consultant.  
+It combines **Retrieval-Augmented Generation (RAG)** with advanced **Large Language Models (Google Gemini)** and **LangChain orchestration** to ensure reliable, factual, and safe medical communication.  
+
+Unlike generic chatbots, MEDIBOT operates through an **agentic workflow**, where each specialized agent performs a defined clinical or analytical role — such as diagnosis, lifestyle guidance, or drug information retrieval.  
+This distributed design ensures **precision**, **transparency**, and **scalability**, making MEDIBOT a highly adaptable platform for both **educational and professional healthcare applications**.  
+
 
 ---
 
@@ -24,8 +28,11 @@ It uses an agentic workflow — each agent performs a specialized medical task, 
 ### 🧠 **Architecture**
 ![Architecture Diagram](docs/architecture.png)
 
-**Flow:**  
-User Input → Intent Detection → Specialized Agent → LLM (Gemini) → Semantic Evaluation → Output + CSV Logging  
+**Flow Summary:**  
+User Input → Intent Detection → Specialized Agent → LLM (Gemini) → Semantic Evaluation → Output + Logging  
+
+Each agent interacts independently with external APIs or internal retrievers and sends results through the **Gemini reasoning layer**, ensuring accuracy, factual grounding, and clarity in responses.
+
 
 ---
 
@@ -54,9 +61,12 @@ User Input → Intent Detection → Specialized Agent → LLM (Gemini) → Seman
 
 ---
 
-### 🪪 **License**
-MIT License © 2025 **Arun Teja**
+## 🪪 **License**
 
+This project is **copyright © 2025 Arun Teja**.  
+All rights reserved. Unauthorized copying, modification, or distribution of this software without prior permission is strictly prohibited.  
+
+This project was developed as part of the **AAIDC Module 2 Certification Program**.
 ---
 
 ### 🙌 **Acknowledgements**
