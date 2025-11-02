@@ -62,6 +62,57 @@ Each agent interacts independently with external APIs or internal retrievers and
 
 ---
 
+### 🛠️ **Tool Integration**
+
+#### Local Tools & Services
+
+**Gemini LLM Integration (Google Gemini)**  
+- Large language model inference for medical reasoning  
+- Handles multiple specialized agents with configurable prompts  
+- Ensures accurate, context-aware, and medically safe responses  
+
+**Web & Research Tools (Research Agent)**  
+- EuropePMC & PubMed integration for evidence-based retrieval  
+- DuckDuckGo search for additional public domain information  
+- Configurable query limits and filtering for reliable results  
+
+**Drug Information Tool (Drug Info Agent)**  
+- OpenFDA API integration for verified drug details  
+- Fetches dosage, side effects, interactions, and warnings  
+- Error handling for API downtime and incomplete responses  
+
+**Lifestyle & Fitness Tool (Lifestyle Agent)**  
+- WGER API integration for nutrition and exercise planning  
+- Personalized fitness and diet recommendations  
+- Configurable goal-based output  
+
+**Image Generation Tool (Image Agent)**  
+- Gemini + HuggingFace models for medical diagram creation  
+- Generates educational and visual content for explanations  
+- Configurable style and resolution  
+
+**Evaluation & Analysis Tools**  
+- Semantic similarity and relevance scoring for all outputs  
+- 5-turn rolling memory window for context preservation  
+- Logging and performance tracking (MSE, semantic similarity)  
+
+**File Management & Logging**  
+- Automatic logging of user interactions and agent outputs  
+- Organized output structure with timestamps  
+- Metadata preservation for reproducibility
+
+---
+
+### 💻 **System Requirements**
+- **Operating System:** Windows 10/11, Linux (Ubuntu 20.04+), macOS 11+  
+- **Python Version:** 3.10 or higher 3.12 
+- **RAM:** 16 GB minimum (32 GB recommended for LLM inference)  
+- **Storage:** 10 GB free space (additional space for vector DB & logs)  
+- **GPU (Optional but recommended):** NVIDIA GPU with CUDA support for faster Gemini model inference  
+- **Dependencies:** See `requirements.txt` for full Python packages and versions  
+
+---
+
 ### ⚙️ **Tech Stack**
 **LLM:** Google Gemini  
 **Framework:** LangChain, LangGraph  
