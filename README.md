@@ -9,7 +9,7 @@ This distributed design ensures **precision**, **transparency**, and **scalabili
 ---
 
 ## 🚀 **Project Overview**
-MEDIBOT integrates **LangChain**, **Gemini**, **FAISS**, and **HuggingFace embeddings** to provide intelligent, medically accurate conversations.  
+MEDIBOT integrates **LangChain**, **LangGraph**, **Gemini**, **FAISS**, and **HuggingFace embeddings** to provide intelligent, medically accurate conversations.  
 It uses an agentic workflow — each agent performs a specialized medical task, ensuring precision, safety, and adaptability.
 
 ---
@@ -29,6 +29,34 @@ It uses an agentic workflow — each agent performs a specialized medical task, 
 
 **Flow Summary:**  
 User Input → Intent Detection → Specialized Agent → LLM (Gemini) → Semantic Evaluation → Output + Logging  
+
+**Detailed Agent Descriptions:**
+
+- **Drug Info Agent**  
+  - Fetches accurate, FDA-verified drug details.  
+  - Provides dosage, side effects, interactions, and warnings.  
+  - Integrates with OpenFDA API for real-time updates.  
+
+- **BMI Agent**  
+  - Calculates Body Mass Index based on user-provided height and weight.  
+  - Offers personalized health guidance and risk analysis.  
+
+- **Diagnosis Agent**  
+  - Identifies potential diseases using symptom input.  
+  - Combines PubMed research with RAG methodology for evidence-based suggestions.  
+  - Provides ranked possibilities and confidence scores.  
+
+- **Lifestyle Agent**  
+  - Generates fitness, nutrition, and wellness plans.  
+  - Uses WGER API and Gemini LLM to create personalized guidance.  
+
+- **Research Agent**  
+  - Retrieves and summarizes recent studies from EuropePMC.  
+  - Provides facts, statistics, and scientific references for informed decisions.  
+
+- **Image Agent**  
+  - Generates educational medical diagrams and visual aids.  
+  - Utilizes Gemini and HuggingFace models for high-quality visual outputs.  
 
 Each agent interacts independently with external APIs or internal retrievers and sends results through the **Gemini reasoning layer**, ensuring accuracy, factual grounding, and clarity in responses.
 
@@ -61,8 +89,8 @@ Each agent interacts independently with external APIs or internal retrievers and
 
 ## 🪪 **License**
 
-This project is **copyright © 2025 Arun Teja**.  
-All rights reserved. Unauthorized copying, modification, or distribution of this software without prior permission is strictly prohibited.  
+This project is licensed under the **[GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html)**.  
+You are free to use, modify, and distribute the software under the terms of this license.  
 
 This project was developed as part of the **AAIDC Module 2 Certification Program**.
 
