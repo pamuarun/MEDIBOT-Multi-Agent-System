@@ -6,7 +6,6 @@ It combines **Retrieval-Augmented Generation (RAG)** with advanced **Large Langu
 Unlike generic chatbots, MEDIBOT operates through an **agentic workflow**, where each specialized agent performs a defined clinical or analytical role — such as diagnosis, lifestyle guidance, or drug information retrieval.  
 This distributed design ensures **precision**, **transparency**, and **scalability**, making MEDIBOT a highly adaptable platform for both **educational and professional healthcare applications**.  
 
-
 ---
 
 ## 🚀 **Project Overview**
@@ -33,13 +32,12 @@ User Input → Intent Detection → Specialized Agent → LLM (Gemini) → Seman
 
 Each agent interacts independently with external APIs or internal retrievers and sends results through the **Gemini reasoning layer**, ensuring accuracy, factual grounding, and clarity in responses.
 
-
 ---
 
 ### ⚙️ **Tech Stack**
-**LLM:** Google Gemini 
-**Framework:** LangChain, Langgraph  
-**Embeddings:** HuggingFace MiniLM 
+**LLM:** Google Gemini  
+**Framework:** LangChain, LangGraph  
+**Embeddings:** HuggingFace MiniLM  
 **Vector DB:** FAISS  
 **APIs:** OpenFDA, PubMed, WGER, EuropePMC  
 **Visualization:** Matplotlib, Pillow, Rich CLI  
@@ -67,7 +65,14 @@ This project is **copyright © 2025 Arun Teja**.
 All rights reserved. Unauthorized copying, modification, or distribution of this software without prior permission is strictly prohibited.  
 
 This project was developed as part of the **AAIDC Module 2 Certification Program**.
+
 ---
 
 ### 🙌 **Acknowledgements**
-Google Gemini • LangChain • Hugging Face • OpenFDA • PubMed • EuropePMC • WGER API
+- **LangChain / LangGraph** — For providing the orchestration framework that enables smooth multi-agent workflows.  
+- **AAIDC Program** — For defining the project requirements, guidance, and structured approach to development.  
+- **Google Gemini** — For powering the advanced LLM reasoning and contextual understanding.  
+- **Hugging Face** — For embeddings and vector representation support.  
+- **OpenFDA API** — For accurate drug information retrieval.  
+- **PubMed & EuropePMC** — For evidence-based research and clinical reference data.  
+- **WGER API** — For lifestyle, fitness, and diet planning integration.
