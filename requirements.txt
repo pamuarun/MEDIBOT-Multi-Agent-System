@@ -1,6 +1,9 @@
+
 # ==============================
 # MEDIBOT / EDUBOT Dependencies
 # ==============================
+
+# Python version required:3.12
 
 # Core LangChain & Graph
 langchain==0.3.0
@@ -40,3 +43,4 @@ google-generativeai==0.7.2
 
 # Web Interface / Dashboard
 streamlit==1.50.0
+
